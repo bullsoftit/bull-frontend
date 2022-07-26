@@ -2,6 +2,9 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "api-interfaces": "libs/api-interfaces",
+    "components": "libs/components",
+    "core": "libs/core",
     "expire-manager": "apps/expire-manager",
     "expire-manager-e2e": "apps/expire-manager-e2e"
   }

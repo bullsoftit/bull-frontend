@@ -1,0 +1,46 @@
+<div class="min-h-screen flex flex-col flex-auto justify-center items-center">
+
+    <!-- Logo del brand. -->
+    <img class="w-44 pb-4 self-center"
+         src="assets/images/logo.svg" />
+
+    <!-- Subtitlo brand. -->
+    <h4 class="text-lg mb-2 font-medium text-center px-8 max-w-lg hidden tablet:block">
+        {{ 'AUTH.LOGIN.SUBTITLE' | translate }}
+    </h4>
+
+    <div class="w-full max-w-lg px-4 py-2">
+        <!-- Barra de progreso. -->
+        <div class="h-1">
+            <mat-progress-bar *ngIf="loading$"
+                              class="rounded-t"
+                              color="accent"
+                              mode="indeterminate"></mat-progress-bar>
+        </div>
+
+        <mat-card>
+            <h4 class="at-card-title mb-2">
+                {{ 'AUTH.LOGIN.HINT' | translate }}
+            </h4>
+
+            <bull-login-form [loading]="loading$ | async"
+                             submitColor="accent"
+                             formFieldColor="accent"
+                             (submitLogin)="login($event)"></bull-login-form>
+
+            <!-- Botón de recuperar contraseña. -->
+            <div class="flex flex-row justify-end mt-4">
+
+                <button mat-button
+                        [disabled]="loading$ | async"
+                        (click)="goToRecovery()">
+                    {{'AUTH.LOGIN.RECOVERY_BTN'| translate}}</button>
+            </div>
+
+        </mat-card>
+    </div>
+
+    <!-- Número de versión de la app. -->
+    <p class="text-xs pt-4">{{'AUTH.LOGIN.VERSION' | translate}}: {{appVersion$ | async}}</p>
+
+</div>

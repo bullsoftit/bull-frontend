@@ -1,0 +1,70 @@
+{
+    "AUTH": {
+        "LOGIN": {
+            "HINT": "Ingrese sus credenciales",
+            "USERNAME": {
+                "LABEL": "Usuario",
+                "ERROR": {
+                    "REQUIRED": "Debe ingresar el nombre de usuario."
+                }
+            },
+            "PASSWORD": {
+                "LABEL": "Contraseña",
+                "ERROR": {
+                    "REQUIRED": "Debe ingresar la contraseña."
+                }
+            },
+            "SUBMIT": "Ingresar",
+            "REGISTER": {
+                "QUESTION": "¿No tiene una cuenta de usuario?",
+                "BTN": "Crear cuenta"
+            },
+            "ERROR": {
+                "CREDENTIALS": "Las credenciales ingresadas son incorrectas. Por favor, intente nuevamente."
+            }
+        }
+    },
+    "DASHBOARD": {},
+    "EMPTY_RESULTS": "No se encontraron resultados.",
+    "LOADING": "Buscando...",
+    "ACCEPT": "Aceptar",
+    "CANCEL": "Cancelar",
+    "CLOSE": "Cerrar",
+    "TO": "a",
+    "PAGINATOR": {
+        "PREV": "Anterior",
+        "NEXT": "Siguiente",
+        "FIRST_PAGE": "Primera",
+        "LAST_PAGE": "Última",
+        "PAGE_SIZE": "Resultados por página",
+        "OF": "de"
+    },
+    "ERROR": {
+        "TITLE": "Se ha producido un error",
+        "MESSAGE": "Se ha producido un error inesperado, por favor, envíe el siguiente código al soporte técnico. {{uiErrorUniqueId}}",
+        "NOT_FOUND": {
+            "TITLE": "Se ha producido un error",
+            "MESSAGE": "No se pudo encontrar el recurso solicitado. Por favor contáctese con el área de sistemas. Código: {{uiErrorUniqueId}} (URL: {{url}})"
+        },
+        "RUNTIME": {
+            "TITLE": "Se ha producido un error",
+            "MESSAGE": "Se ha producido un error de ejecución inesperado. Por favor, envíe el siguiente código al soporte técnico"
+        },
+        "TIMEOUT": {
+            "TITLE": "Conexión",
+            "MESSAGE": "Esta acción tardó demasiado y fue cancelada. Por favor, intente nuevamente."
+        },
+        "SERVER_OFFLINE": {
+            "TITLE": "No se pudo establecer la conexión con el servidor de destino (Api-Dashboard).",
+            "MESSAGE": "No se pudo establecer la conexión con el servidor de destino (Api-Dashboard)."
+        },
+        "INTERNAL_SERVER": {
+            "MESSAGE": "No se pudo establecer la conexión con el servidor de destino (Api-Dashboard)."
+        },
+        "CONNECTION": {
+            "TITLE": "Se ha producido un error",
+            "MESSAGE": "Disculpe, no existe conexion a internet. Intente nuevamente."
+        },
+        "EXPIRED_SESSION": "Su sesión ha expirado. Por favor ingrese nuevamente al sistema."
+    }
+}
